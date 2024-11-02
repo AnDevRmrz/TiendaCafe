@@ -1,19 +1,22 @@
 /* tslint:disable:no-unused-variable */
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { waitForAsync, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { CoffeeListComponent } from './coffee-list.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CoffeeService } from '../coffee.service';
 
 describe('CoffeeListComponent', () => {
   let component: CoffeeListComponent;
   let fixture: ComponentFixture<CoffeeListComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ CoffeeListComponent ]
-    })
-    .compileComponents();
+      imports: [HttpClientModule],
+      declarations: [CoffeeListComponent],
+      providers: [CoffeeService],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
