@@ -1,3 +1,33 @@
-<div *ngFor="let coffee of coffees">
-  <p>{{ coffee.nombre }}</p>
+<div style="width: 85%">
+  <p class="header">El aroma mágico</p>
+  <hr />
+  <img src="header.png" alt="header" />
+  <hr />
+  <div class="table-container">
+    <table class="table">
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Tipo</th>
+          <th scope="col">Región</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let coffee of coffees">
+          <th scope="row">{{ coffee.id }}</th>
+          <td>{{ coffee.nombre }}</td>
+          <td>{{ coffee.tipo }}</td>
+          <td>{{ coffee.region }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="consolidated-info-container">
+    <p>Total café de origen: {{ getOrigenCoffees() }}</p>
+    <p>Total café blend: {{ getBlendCoffees() }}</p>
+  </div>
+  <p class="footer">
+    Contact us: +57 3102105253 - info&#64;elaromamagico.com - &#64;elaromamagico
+  </p>
 </div>

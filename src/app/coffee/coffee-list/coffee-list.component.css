@@ -1,0 +1,38 @@
+.header {
+  font-family: "Inder";
+  font-size: 36px;
+  padding-left: 10px;
+}
+.table-container {
+  width: auto;
+  padding-left: 15px;
+  font-size: 18px;
+  font-family: "Inter";
+  width: 65%;
+}
+th {
+  padding-right: 30px;
+}
+td {
+  padding-right: 40px;
+}
+img {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+}
+.consolidated-info-container {
+  font-size: 18px;
+  font-family: "Inter";
+}
+.consolidated-info-container > p {
+  margin-top: 0%;
+  margin-bottom: 0%;
+  padding-left: 15px;
+}
+.footer {
+  text-align: center;
+  font-family: "Inter";
+  font-size: 18px;
+  padding-top: 50px;
+}

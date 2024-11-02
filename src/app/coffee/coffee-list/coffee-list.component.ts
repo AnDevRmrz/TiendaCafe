@@ -17,6 +17,14 @@ export class CoffeeListComponent implements OnInit {
     });
   }
 
+  getBlendCoffees(): number {
+    return this.coffees.filter(c => c.tipo.includes('Blend')).length;
+  }
+
+  getOrigenCoffees(): number {
+    return this.coffees.filter(c => c.tipo.includes('Origen')).length;
+  }
+
   ngOnInit() {
     this.getCoffees();
   }
