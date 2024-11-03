@@ -1,9 +1,9 @@
-<div style="width: 85%">
-  <p class="header">El aroma mágico</p>
+<div class="container">
+  <p class="title">El aroma mágico</p>
   <hr />
-  <img src="header.png" alt="header" />
+  <img src="header.png" alt="header"/>
   <hr />
-  <div class="table-container">
+  <div class="table-container col-md-8">
     <table class="table">
       <thead class="table-dark">
         <tr>
@@ -23,7 +23,7 @@
       </tbody>
     </table>
   </div>
-  <div class="consolidated-info-container">
+  <div id="consolidated-info-container">
     <p>Total café de origen: {{ getOrigenCoffees() }}</p>
     <p>Total café blend: {{ getBlendCoffees() }}</p>
   </div>
